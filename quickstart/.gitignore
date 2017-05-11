@@ -1,0 +1,6 @@
+typings
+src/app/**/*.js
+src/**/*.map
+node_modules
+jspm_packages
+bower_components
