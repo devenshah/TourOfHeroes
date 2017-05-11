@@ -8,11 +8,14 @@ import { HeroDetailComponent } from './hero-detail.component';
 import { HeroListComponent } from './hero-list.component';
 import { CrisisListComponent } from './crisis-list.component';
 import { PageNotFoundComponent } from './not-found.component';
+import { DashboardComponent } from './dashboard.component';
+import { HeroService } from './hero.service';
 
 const appRoutes: Routes = [
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'crisis-center', component: CrisisListComponent },
   { path: 'heroes', component: HeroListComponent },
-  { path: '', redirectTo: '/heroes', pathMatch:'full' },
+  { path: '', redirectTo: '/dashboard', pathMatch:'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -27,7 +30,11 @@ const appRoutes: Routes = [
      HeroListComponent,
      HeroDetailComponent,
      CrisisListComponent,
-     PageNotFoundComponent
+     PageNotFoundComponent,
+     DashboardComponent
+   ],
+   providers: [
+     HeroService,
    ],
   bootstrap:    [ AppComponent ]
 })

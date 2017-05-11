@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'crisis-list',
   template: `
-    <h1>Crisis List</h1>
+    <h1>CRISIS CENTER</h1>
+    <p>Get your crisis here</p>
   `,
 })
 export class CrisisListComponent{}

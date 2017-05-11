@@ -7,8 +7,8 @@ import { HeroService } from './hero.service';
 @Component({
   selector: 'my-heroes',
   template: `
-  <h1>{{title}}</h1>
-  <h2>My Heroes</h2>
+  <h2>Heroes</h2>
+  <button routerLink="/sidekicks">Go to sidekicks</button>
   <ul class="heroes">
     <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
@@ -64,9 +64,7 @@ styles: [`
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
-`],
-providers: [HeroService]
-
+`]
 })
 
 export class HeroListComponent implements OnInit {
