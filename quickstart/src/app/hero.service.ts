@@ -21,4 +21,8 @@ export class HeroService {
   getHeroes(): Promise<Hero[]> {
     return Promise.resolve(HEROES);
   } // stub
+  getHero(id: number){
+    return this.getHeroes()
+             .then(heroes => heroes.find(hero => hero.id === id));
+  } 
 }

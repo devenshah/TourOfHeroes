@@ -1,4 +1,5 @@
 typings
+*.log
 src/app/**/*.js
 src/**/*.map
 node_modules

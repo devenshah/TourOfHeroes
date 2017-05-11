@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
-    <h1>Angular Router</h1>
+    <h1>{{title}}</h1>
     <nav>
       <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
       <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
     </nav>
     <router-outlet></router-outlet>
   `,
+  styleUrls: [ './app.component.css' ]
 })
 
 export class AppComponent{
