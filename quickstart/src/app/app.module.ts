@@ -14,6 +14,7 @@ import { HeroListComponent } from './hero-list.component';
 import { CrisisListComponent } from './crisis-list.component';
 import { PageNotFoundComponent } from './not-found.component';
 import { DashboardComponent } from './dashboard.component';
+import { HeroSearchComponent } from './hero-search.component';
 import { HeroService } from './hero.service';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { HeroService } from './hero.service';
     CrisisListComponent,
     PageNotFoundComponent,
     DashboardComponent,
+    HeroSearchComponent,
   ],
   providers: [
     HeroService,
